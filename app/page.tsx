@@ -83,10 +83,16 @@ export default function HomePage() {
             <h2 className=" text-gray-700 text-3xl font-bold">
               <span className="text-blue-600">#</span> About Me
             </h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              I’m passionate about building intuitive, scalable applications.
-              I focus on clean architecture, maintainable code, and thoughtful
-              user experiences while continuously learning new technologies.
+            <p className="text-gray-600 max-w-xl mx-auto leading-relaxed">
+              I’m a software engineer focused on building intuitive, scalable applications.
+              I care deeply about clean architecture, maintainable code, and thoughtful user
+              experiences.
+            </p>
+
+            <p className="text-gray-600 max-w-xl mx-auto leading-relaxed">
+              I enjoy working across the stack — from designing responsive interfaces to
+              building secure APIs and data-driven systems — while continuously learning
+              and improving my craft.
             </p>
           </div>
         </section>
@@ -130,6 +136,49 @@ export default function HomePage() {
             </p>
 
             <div className="grid md:grid-cols-2 gap-12">
+              
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="border rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
+              >
+                <h3 className="text-gray-500 text-xl font-semibold mb-2">
+                  Full-Stack Real Estate App
+                </h3>
+                <p className="text-gray-700 mb-3">
+  A full-stack real estate platform with secure APIs and database persistence.
+</p>
+
+<p className="text-gray-600 text-sm leading-relaxed">
+  <span className="font-medium">Why I built this:</span> This project was inspired
+  by a system I grew up with, where rental and for-sale addresses were written on a
+  public blackboard. While community-driven, the information was often outdated and
+  difficult to manage. I built this application to simplify the process without
+  removing the role of dealers—making it easier for homeowners to share listings,
+  for dealers to promote them, and for people to find a place to live through one
+  accessible platform.
+</p>
+
+
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <Badge>React</Badge>
+                  <Badge>Java (Quarkus)</Badge>
+                  <Badge>MySQL</Badge>
+                  <Badge>AWS</Badge>
+                </div>
+
+                <a
+                  href="https://github.com/Justerodney/CS320-Project-JusteBouithy"
+                  target="_blank"
+                  className="text-gray-300 underline font-medium mt-auto hover:text-blue-600 transition"
+                >
+                  GitHub Repository
+                </a>
+              </motion.div>
+              
               <motion.div
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -151,37 +200,6 @@ export default function HomePage() {
 
                 <a
                   href="https://github.com/Justerodney/Aora-App-Justerodney"
-                  target="_blank"
-                  className="text-gray-300 underline font-medium mt-auto hover:text-blue-600 transition"
-                >
-                  GitHub Repository
-                </a>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-                className="border rounded-xl p-6 shadow-sm hover:shadow-md transition flex flex-col"
-              >
-                <h3 className="text-gray-500 text-xl font-semibold mb-2">
-                  Full-Stack Real Estate App
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  A full-stack application for managing real estate bidder data
-                  with secure APIs and database persistence.
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  <Badge>React</Badge>
-                  <Badge>Java (Quarkus)</Badge>
-                  <Badge>MySQL</Badge>
-                  <Badge>AWS</Badge>
-                </div>
-
-                <a
-                  href="https://github.com/Justerodney/CS320-Project-JusteBouithy"
                   target="_blank"
                   className="text-gray-300 underline font-medium mt-auto hover:text-blue-600 transition"
                 >
